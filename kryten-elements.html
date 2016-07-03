@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="kryten-elements">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'kryten-elements',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'kryten-elements',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
